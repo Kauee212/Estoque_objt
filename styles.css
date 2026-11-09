@@ -1,0 +1,113 @@
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #300000);
+    color: #fff;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* Área principal */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #1b1b1b;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+    border: 1px solid #383838;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #e50914;
+    font-size: 36px;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #252525;
+}
+
+/* Cabeçalho */
+thead {
+    background-color: #e50914;
+}
+
+th {
+    padding: 20px 15px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Conteúdo */
+td {
+    padding: 20px 15px;
+    text-align: center;
+    font-size: 15px;
+    color: #eeeeee;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(even) {
+    background-color: #303030;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #252525;
+}
+
+/* Efeito ao passar o mouse */
+tbody tr:hover {
+    background-color: #4a1717;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Última linha */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsividade para celular */
+@media (max-width: 650px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 20px 10px;
+        overflow-x: auto;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    th, td {
+        padding: 15px 10px;
+        font-size: 13px;
+    }
+}
